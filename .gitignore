@@ -1,0 +1,4 @@
+# Project exclude paths
+/app-one/target/
+/app-two/target/
+/gateway/target/

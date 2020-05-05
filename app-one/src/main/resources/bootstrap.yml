@@ -1,0 +1,17 @@
+server:
+  port: 8085 #启动端口 命令行注入
+  servlet:
+    context-path: /
+nacos:
+  server:
+    addr: localhost:8848
+
+spring:
+  application:
+    name: one
+  main:
+    allow-bean-definition-overriding: true # Spring Boot 2.1 需要设定
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server.addr}
